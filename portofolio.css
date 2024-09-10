@@ -1,0 +1,244 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* Navigation */
+header {
+    background-color: #333;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+    transition: color 0.3s ease;
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://source.unsplash.com/1600x900/?coding') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #e67e22;
+}
+
+/* About Section */
+#about {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Styling for the profile photo */
+.profile-photo {
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Make sure height and width are the same to get a perfect circle */
+    border-radius: 50%; /* This makes the image round */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    margin: 1.5rem 0; /* Add some space above and below the image */
+    border: 3px solid #f39c12; /* Optional: Add a border around the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Projects Section */
+#projects {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.project-card {
+    background-color: #fff;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.project-card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Skills Section */
+#skills {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #f39c12;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+#contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact-form button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    padding: 2rem 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
